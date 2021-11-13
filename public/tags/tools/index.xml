@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tools on My New Hugo Site</title>
+    <link>http://lich-img.github.io/Mysite/tags/tools/</link>
+    <description>Recent content in tools on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://lich-img.github.io/Mysite/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pm2使用指南</title>
+      <link>http://lich-img.github.io/Mysite/posts/node/pm2%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://lich-img.github.io/Mysite/posts/node/pm2%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>1. 安装pm2 npm install pm2 -g 或
+yarn global add pm2 使用pm2 -v查看版本号
+2. 基本使用 2.1 启动应用 pm2 start app.js # 不止是js文件，其他可执行文件也可以执行 pm2 start script.sh # 启动bash脚本 pm2 start python3 -- app.py # -- 后跟要传给命令的参数 pm2 start binary -- -port 8080 在启动应用时还有一些参数
+--name &amp;lt;app_name&amp;gt; # 为应用设置一个名字 --watch # 监视源文件并在源文件存在更改时重启应用 --max-memory-restart &amp;lt;200MB&amp;gt; # 设置应用占用内存上限 --log &amp;lt;log_path&amp;gt; # 设置log文件路径 -- arg1 arg2 arg3 # 传递参数 --restart-delay &amp;lt;delay in ms&amp;gt; # 重启前延时 --time 在日志前增加时间戳 --no-autorestart # 不要自动重启 2.</description>
+    </item>
+    
+    <item>
+      <title>zsh的基本配置</title>
+      <link>http://lich-img.github.io/Mysite/posts/env/zsh%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://lich-img.github.io/Mysite/posts/env/zsh%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+      <description>1. 按照Oh my zsh $ sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; 2. 配置Oh my zsh   将zsh设置为默认Shell (脚本的最后一般会问你是否切换)
+chsh -s /bin/zsh # 不需要使用root权限   更换主题
+vim ~/.zshrc 找到ZSH_THEME=&#39;robbyrussell&#39;, 更换为你想要使用的主题，可以在这里找到你想要的主题
+  安装插件
+vim ~/.zshrc 找到plugins=(), 添加插件名称，我这里添加的插件有：
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting) git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions   完成
+source ~/.zshrc # 启动zsh   3. 使用主题powerlevel10k 下载主题
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 打开你的~/.zshrc,将主题换为：powerlevel10k/powerlevel10k
+更改保存并使用主题
+source ~/.zshrc 这时powerlevel10k会自动启动，询问你想要的配置 按照提示配置你想要的风格即可</description>
+    </item>
+    
+    <item>
+      <title>GitHub图床&#43;vscode&#43;Picgo </title>
+      <link>http://lich-img.github.io/Mysite/posts/env/github%E5%9B%BE%E5%BA%8A&#43;vscode&#43;picgo-/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://lich-img.github.io/Mysite/posts/env/github%E5%9B%BE%E5%BA%8A&#43;vscode&#43;picgo-/</guid>
+      <description>GitHub图床+vscode+Picgo 0. 来由 用markdown写博客的时候，图片往哪里存地干活？图床里存···
+1. GitHub配置   创建图床仓库 为了不污染我原来的git账号，我决定新建一个git账号，专门用作图床账号。 新建账号之后，new一个repo，啥都不用点，直接create。
+  生成token 点击你GitHub页面右上角的头像，点击settings 在页面左侧找到Developer settings，选择之，再找到Personal access tokens，再选择之，然后generate new tokens 在新弹出的页面中填写note，并选择repo， 然后直接到最下面，Generate token 这样GitHub会为你生成一个token（只会出现这一次），复制它留用。   2. 配置VScode中的Picgo插件 在vscode的插件商店中直接搜索Picgo，然后点击安装 安装完成后，再来配置你的Picgo File&amp;gt;Preferences&amp;gt;settings&amp;gt;Entensions&amp;gt;Picgo找到配置picgo的位置，填写必要的信息 &amp;#34;picgo.picBed.current&amp;#34;: &amp;#34;github&amp;#34;, &amp;#34;picgo.picBed.github.branch&amp;#34;: &amp;#34;master&amp;#34;, &amp;#34;picgo.picBed.github.path&amp;#34;: &amp;#34;&amp;#34;, # 你想要图片存储的路径 &amp;#34;picgo.picBed.github.repo&amp;#34;: &amp;#34;&amp;#34;, # 你的用户名以及repo名，user/REPO_name &amp;#34;picgo.picBed.github.token&amp;#34;: &amp;#34;&amp;#34; # 刚才复制的token，粘贴到这里 3. 使用picgo上传图片 截个图并复制到剪贴板，在vscode里按下&amp;quot;CTRL+ALT+u&amp;quot;，图片就可以十分迅速的上传到你配置的GitHub仓库并为你返回图片链接 （￣︶￣）↗。
+END</description>
+    </item>
+    
+  </channel>
+</rss>

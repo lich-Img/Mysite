@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Golang | My New Hugo Site</title>
+<meta name="keywords" content="" />
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://lich-img.github.io/Mysite/categories/golang/" />
+<link crossorigin="anonymous" href="/Mysite/assets/css/stylesheet.min.6f60056d44d3f7eb69a4bc6c332b59960f3a995802bded244750232f33713c49.css" integrity="sha256-b2AFbUTT9&#43;tppLxsMytZlg86mVgCve0kR1AjLzNxPEk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://lich-img.github.io/Mysite/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://lich-img.github.io/Mysite/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://lich-img.github.io/Mysite/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://lich-img.github.io/Mysite/apple-touch-icon.png">
+<link rel="mask-icon" href="http://lich-img.github.io/Mysite/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.81.0" />
+<link rel="alternate" type="application/rss+xml" href="http://lich-img.github.io/Mysite/categories/golang/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Golang" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://lich-img.github.io/Mysite/categories/golang/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Golang"/>
+<meta name="twitter:description" content=""/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://lich-img.github.io/Mysite/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>Golang</h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>golang中的tag
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>1. tag的基本介绍 字段标签可以存储元信息，这些元信息可以使用反射来访问。通常这些元信息用来提供一个字段如何从一种格式编码至另一种格式的相关信息（或是数据应如何在数据库中存储等）。但实际上标签可以存储任何你想要的元信息，无论是你自己使用还是由另一个包使用。
+就像reflect.StructTag文档中提到的那样，字段标签通常是由空格分割的key:&#34;value&#34;列表，例如：
+type User struct { Name string `json:&#34;name&#34; xml:&#34;name&#34;` } 其中的key通常表示后面&#34;value&#34;所对应的包，例如json这个key将被encoding/json这个包使用。
+如果需要在&#34;value&#34;中传递多个值，那么通常使用,逗号来分割，例如：
+Name string `json:&#34;name,omitempty&#34; xml:&#34;name&#34;` 值为破折号通常代表在处理时忽略该字段，例如在json中代表不要序列化这个字段
+2. 例子：获取自定义tag 我们可以使用反射包来获取结构体字段的值。首先我们需要获取结构体的Type，然后查询字段，可以使用Type.Field(i int)或者Type.FieldByName(name string)。这些方法返回一个代表结构体字段的StructField值和一个代表tag的类型为StructTag的StructField.Tag值。
+前面我们提到，字段标签通常是由空格分割的key:&#34;value&#34;列表，如果你的确是这么做的，你可以使用StructTag.Get(key string)这个方法来获取这个key对应的value。如果你不是这么做的，Get()方法可能不能解析key:&#34;value&#34;对并找到你想要的标签。如果你没有遵循字段标签通常是由空格分割的key:&#34;value&#34;列表，那么你可能需要实现自己的解析逻辑。
+go1.7中添加了StructTag.Lookup()方法，这个方法的行为类似于Get()，但其将不包含给定键的标签与将空字符串与给定键相关联的标签区分开来。
+来看下面这个例子：
+type User struct { Name string `mytag:&#34;MyName&#34;` Email stirng `mytag:&#34;MyEmail&#34;` } u := User{&#34;Bob&#34;, &#34;bob@cc.com&#34;} t := reflect.TypeOf(u) for _ fieldName := range []string{&#34;Name&#34;, &#34;Email&#34;} { field, found := t.FieldByName(fieldName) if !found { continue } fmt.Printf(&#34;\nField: User.%s\n&#34;, fieldName) fmt.Printf(&#34;\tWhole tag value : %q\n&#34;, field....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-09-14 00:00:00 +0000 UTC'>September 14, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to golang中的tag" href="http://lich-img.github.io/Mysite/posts/golang/golang%E4%B8%AD%E7%9A%84tag/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>ORM之sqlc
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>1. 安装sqlc go get github.com/kyleconroy/sqlc/cmd/sqlc 2. 基本使用 建立基本项目结构 mkdir sqlc-demo cd sqlc-demo go mod init sqlc-demo 在sqlc-demo中建立如下目录结构：
+. ├── db │ ├── queries │ ├── schema │ └── sqlc └── go.mod 其中query中存储查询语句，schema中存储数据库表结构，sqlc中存储生成的代码。
+基本表结构  sqlc-demo/db/schema/table.sql
+ CREATE TABLE &#34;accounts&#34; ( &#34;id&#34; bigserial PRIMARY KEY, &#34;owner&#34; varchar NOT NULL, &#34;balance&#34; bigint NOT NULL, &#34;currency&#34; varchar NOT NULL, &#34;created_at&#34; timestamptz NOT NULL DEFAULT (now()) ); CREATE TABLE &#34;entries&#34; ( &#34;id&#34; bigserial PRIMARY KEY, &#34;account_id&#34; bigint NOT NULL, &#34;amount&#34; bigint NOT NULL, &#34;created_at&#34; timestamptz NOT NULL DEFAULT (now()) ); CREATE TABLE &#34;transfers&#34; ( &#34;id&#34; bigserial PRIMARY KEY, &#34;from_account_id&#34; bigint NOT NULL, &#34;to_account_id&#34; bigint NOT NULL, &#34;amount&#34; bigint NOT NULL, &#34;created_at&#34; timestamptz NOT NULL DEFAULT (now()) ); 配置文件  sqlc-demo/sqlc....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-08-22 00:00:00 +0000 UTC'>August 22, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to ORM之sqlc" href="http://lich-img.github.io/Mysite/posts/golang/orm%E4%B9%8Bsqlc/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>数据库版本管理-migrate
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>migrate是一个golang写成的数据库版本迁移工具，可以用来方便的对数据库进行迁移和回退。 Github上有详细的教程等：https://github.com/golang-migrate/migrate
+  建立目录  mkdir -p migrate-demo/db cd migrate-demo/db mkdir ddl mkdir -p schema/blog 现在migrate-demo目录下结构如下：
+. └── db ├── ddl └── schema └── blog 其中，ddl中存储建库的sql文件，schema存放建表的sql文件
+建库  建库
+vim db/ddl/blog.sql CREATE DATABASE IF NOT EXISTS blog DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci; build镜像  编写Dockerfile
+vim db/Dockerfile FROMmysql:5.7COPY ./ddl /docker-entrypoint-initdb.d/ENV MYSQL_ROOT_PASSWORD=admin123 复制到/docker-entrypoint-initdb.d目录下的sql脚本会被自动执行
+docker build -t mysql-demo -f ./Dockerfile . build成功后，使用docker images命令查看镜像：
+REPOSITORY TAG IMAGE ID CREATED SIZE mysql-demo latest 6a2faae69a6f 26 minutes ago 447MB 启动镜像并查看  docker run --name mysql -p 13306:3306 -d mysql-demo 进入容器查看数据库...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-08-15 00:00:00 +0000 UTC'>August 15, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 数据库版本管理-migrate" href="http://lich-img.github.io/Mysite/posts/golang/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86-migrate/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>依赖注入：wire包的使用
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>官方教程，写的很好，我就不多说了
+ Let’s learn to use Wire by example. The Wire guide provides thorough documentation of the tool’s usage. For readers eager to see Wire applied to a larger server, the guestbook sample in Go Cloud uses Wire to initialize its components. Here we are going to build a small greeter program to understand how to use Wire. The finished product may be found in the same directory as this README....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-07-06 00:00:00 +0000 UTC'>July 6, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 依赖注入：wire包的使用" href="http://lich-img.github.io/Mysite/posts/golang/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5wire%E5%8C%85%E7%9A%84%E4%BD%BF%E7%94%A8/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>5种goroutine池的实现之对比
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>1. wazsmwazsm/mortar（★74） 简单介绍
+创建一个容量为 N 的池, 在池容量未满时, 每塞入一个任务（生产任务）, 任务池开启一个 worker (建立协程) 去处理任务（消费任务）。 当任务池容量赛满，每塞入一个任务（生产任务）, 任务会被已有的 N 个 worker 抢占执行（消费任务），达到协程限制的功能。但worker创建后不会回收，除非将整个pool撤销。
+结构
+type Task struct { Handler func(v ...interface{}) // 函数签名 	Params []interface{} // 参数 } // Pool task pool type Pool struct { capacity uint64 // 池的容量，自行制定 	runningWorkers uint64 // 正在运行的worker 	status int64 // 池的状态 	chTask chan *Task // 任务队列，worker从中获取任务 	PanicHandler func(interface{}) // 自定义的PanicHandler，防止因某个goroutine发生panic而导致服务崩溃。 	sync.Mutex // 全局锁 } 核心代码...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-06-19 00:00:00 +0000 UTC'>June 19, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 5种goroutine池的实现之对比" href="http://lich-img.github.io/Mysite/posts/golang/5%E7%A7%8Dgoroutine%E6%B1%A0%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%B9%8B%E5%AF%B9%E6%AF%94/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>go generate工具
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>1. go generate go generate命令运行时，将找到源代码中所有包含//go:generate的特殊注释，提取并执行//go:generate后附加的命令。
+基本语法：
+//go:generate [-run regexp] [-n] [-v] [-x] [build flags] [file.go... | packages] 需要注意的几点：
+ 该特殊注释必须在.go源码文件中。 每个源码文件可以包含多个generate特殊注释。 go generate只在运行go generate命令时运行，go build, go get, go test等其他命令不会运行它。 命令串行执行的，如果出错，就终止后面的执行。 特殊注释必须以&#34;//go:generate&#34;开头，双斜线后面没有空格。  简单的例子：
+package main import &#34;fmt&#34; //go:generate echo &#34;world&#34; func main() { fmt.Println(&#34;hello&#34;) } 运行结果：
+在go generate命令中，还可以使用一些环境变量：
+ $GOARCH The execution architecture (arm, amd64, etc.) $GOOS The execution operating system (linux, windows, etc.) $GOFILE The base name of the file....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-05-27 00:00:00 +0000 UTC'>May 27, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to go generate工具" href="http://lich-img.github.io/Mysite/posts/golang/go-generate%E5%B7%A5%E5%85%B7/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>golang中context包的使用
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>context包定义了Context类型，这个类型在API边界即进程中传递截止日期、同步信号，请求值等相关信息。
+ 1. 对context包的介绍 在服务器的传入请求中应包含context，而对服务器的传出调用应接收一个context。它们之间的调用链必须包含context，或是衍生的WithCancel, WithDeadline, WithTimeout, WithValue。当一个WithCancel Context被“cancel”，那么当前context所派生的所有context也都将被取消。
+WithCancel, WithDeadline, WithTimeout接收一个Context对象（父对象），并返回其父对象的一个携带有cancel/deadline/timeout的一个拷贝（子对象）。调用CancelFunc会取消其子对象及子对象的子对象等，删除父对象对子对象的引用，并停止所有关联的计时器。未能调用CancelFunc将造成父对象结束前或计时器被触发前子对象的泄露。使用go vet工具可以检查所有控制流路径上是否都使用了CancelFunc
+使用context的程序应遵循以下规则，以使各个包之间的接口保持一致，并启用静态分析工具来检查上下文传播：
+ 不要将context存储在结构类型中，而是将context明确传递给需要它的每个函数。Context应该是第一个函数，通常命名为ctx。  func DoSomething(ctx context.Context, arg Arg) error { // ...use ctx... } 不要传递一个值为nil的context，即使一个函数允许这样做。如果你不确定Context的作用那就请传递context.TODO。 只在进程和API间传递请求范围数据时使用context值，不要用于将可选参数传递给函数。 同样的Context可以传递给运行在不同goroutine中的函数，Context是线程安全的。  2. Context接口 type Context interface { Done() &lt;-chan struct{} Err() error Deadline() (deadline time.Time, ok bool) Value(key interface{}) interface{} } Context是一个接口，其定义非常的简单，只包含4个方法：
+  Done() &lt;-chan struct{} Done()方法将一个channel作为取消信号返回给持有context的函数，当该channel被关闭（即Done()被调用），这些函数应该立即停止其工作并返回。
+  Err() error Err()返回一个Error，说明为什么取消context。如果Done()没有被调用，那么Err返回nil。
+  Deadline() (deadline time.Time, ok bool) Deadline()方法返回持有这个context的函数的预期结束时间。如果并没有设置deadline，那么返回的ok将被设置为false。...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-05-23 00:00:00 +0000 UTC'>May 23, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to golang中context包的使用" href="http://lich-img.github.io/Mysite/posts/golang/golang%E4%B8%ADcontext%E5%8C%85%E7%9A%84%E4%BD%BF%E7%94%A8/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Golang中反射reflect的基本使用
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>在计算机领域，反射是指一类应用，它们能够自描述和自控制。也即是说，这类应用通过采用某种机制来实现对自己行为的描述和监测，并能根据自身行为的状态和结果，调整或修改应用所描述行为的状态和相关的语义。 反射（reflect）让我们能在运行期探知对象的类型信息和内存结构，这从一定程度上弥(mi)补了静态语言在动态行为上的不足。 反射（reflect）是在计算机程序运行时，访问，检查，修改它自身的一种能力，是元编程的一种形式。 Go语音提供了一种机制在运行时更新变量和检查它们的值、调用它们的方法和它们支持的内在操作，但是在编译时并不知道这些变量的具体类型。这种机制被称为反射。反射也可以让我们将类型本身作为第一类的值类型处理。
+ 1. 为何我们需要反射？ fmt.Fprintf函数提供字符串格式化处理逻辑，它可以对任意类型的值格式化并打印，甚至支持用户自定义的类型。
+让我们也来尝试实现一个类似功能的函数。为了简单起见，我们的函数只接收一个参数，然后返回和fmt.Sprint类似的格式化后的字符串。我们实现的函数名也叫Sprint。 这里我们使用switch类型分支来对不同的类型进行处理。
+func Sprint(x interface{}) string { type stringer interface { String() string } switch x := x.(type) { case stringer: return x.String() case string: return x case int: return strconv.Itoa(x) // ...similar cases for int16, uint32, and so on...  case bool: if x { return &#34;true&#34; } return &#34;false&#34; default: // array, chan, func, map, pointer, slice, struct  return &#34;?...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-05-22 00:00:00 +0000 UTC'>May 22, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to Golang中反射reflect的基本使用" href="http://lich-img.github.io/Mysite/posts/golang/golang%E4%B8%AD%E5%8F%8D%E5%B0%84reflect%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>野生Goroutine带来的问题及对应解决方案
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>一、野生goroutine的问题  引言： 毋庸置疑，golang原生的goroutine极大降低了程序员使用并发编程的代价，程序员们不需要再去关心如何实现接口、如何继承Thread类等多余的操作，只需要简简单单的go, 就可以开启一个并发的协程。但这种简单的使用方式同时也带来一些问题，这些goroutine不再受我们控制了，它们在运行时可能会发生任何错误或意外，而我们无法得知或去处理这些意外。我们将启动后不再受主进程控制的goroutine称为野生goroutine，本节将介绍野生goroutine存在的一些问题并介绍一些简单的解决方法。
+ 1. goroutine中panic无法恢复 正常的函数中panic的recover
+import ( &#34;fmt&#34; ) func main(){ defer func(){ if err := recover(); err != nil{ fmt.Println(err) } }() var bar = []int{1} fmt.Println(bar[1]) } reflect: slice index out of range goroutine中panic的恢复
+func main(){ defer func(){ if err := recover(); err != nil { // 在这里使用recover(),不能捕获panic 	fmt.Println(&#34;catch you, bad guy&#34;) } }() go func(){ fmt.Println(&#34;I&#39;m in a goroutine&#34;) panic(&#34;come to catch me&#34;) }() time....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-05-19 00:00:00 +0000 UTC'>May 19, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 野生Goroutine带来的问题及对应解决方案" href="http://lich-img.github.io/Mysite/posts/golang/%E9%87%8E%E7%94%9Fgoroutine%E5%B8%A6%E6%9D%A5%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Go中的锁
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>1. sync.Mutex互斥锁 不同goroutine之间对公共资源进行访问需要使用互斥锁。例如在对银行账户的操作中，如果我们有两种操作，一个是查询余额，一个是存款。其操作如下：
+package bank // 存款余额 var balance int // 存款 func Deposit(amount int) { balance = balance &#43; amount } // 查询 func Balance() int { return balance } // Alice: go func() { bank.Deposit(200) // A1  fmt.Println(&#34;=&#34;, bank.Balance()) // A2 }() // Bob: go bank.Deposit(100) // B 这其中，若把A1分为两个操作，A1r：把余额从内存中读出来；A2w：把修改后的余额写入内存。
+若执行顺序为A1r → B → A1w → A2， 正常情况下，Alice和Bob分别存入了$200，$100，因此最后的存款应该是300，但最后输出结果为200。因为A在计算时是按照A1r读出的数值进行计算，忽略了B的操作，A与B之间发生了数据竞争。
+ 数据竞争：无论任何时候，只要有两个goroutine并发访问同一变量，且至少其中的一个是写操作的时候就会发生数据竞争。
+ 解决此问题的办法之一是使用互斥锁。
+import &#34;sync&#34; var ( mu sync.Mutex // guards balance  balance int ) func Deposit(amount int) { mu....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-04-14 00:00:00 +0000 UTC'>April 14, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to Go中的锁" href="http://lich-img.github.io/Mysite/posts/golang/go%E4%B8%AD%E7%9A%84%E9%94%81/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://lich-img.github.io/Mysite/categories/golang/page/2/">Next Page »</a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2021 <a href="http://lich-img.github.io/Mysite/">My New Hugo Site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>DL&amp;ML | My New Hugo Site</title>
+<meta name="keywords" content="" />
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://lich-img.github.io/Mysite/categories/dlml/" />
+<link crossorigin="anonymous" href="/Mysite/assets/css/stylesheet.min.6f60056d44d3f7eb69a4bc6c332b59960f3a995802bded244750232f33713c49.css" integrity="sha256-b2AFbUTT9&#43;tppLxsMytZlg86mVgCve0kR1AjLzNxPEk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://lich-img.github.io/Mysite/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://lich-img.github.io/Mysite/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://lich-img.github.io/Mysite/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://lich-img.github.io/Mysite/apple-touch-icon.png">
+<link rel="mask-icon" href="http://lich-img.github.io/Mysite/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.81.0" />
+<link rel="alternate" type="application/rss+xml" href="http://lich-img.github.io/Mysite/categories/dlml/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="DL&amp;ML" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://lich-img.github.io/Mysite/categories/dlml/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DL&amp;ML"/>
+<meta name="twitter:description" content=""/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://lich-img.github.io/Mysite/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>DL&amp;ML</h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>模型评估
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>模型评估 此节内容只针对分类模型，使用sklearn库
+1、准确率 accuracy_score函数计算精度，在多标签分类中，该函数返回子集精度。如果样本的整个预测标签集与真实的标签集严格匹配，则子集精度为1.0; 否则它是0.0。如果$\hat{y}i$是第$i$类样本预测值，$y_i$是相应的真值，那么正确预测的分数$n\text{samples}$被定义为$$\texttt{accuracy}(y, \hat{y}) = \frac{1}{n_\text{samples}} \sum_{i=0}^{n_\text{samples}-1} 1(\hat{y}_i = y_i)$$
+import numpy as np from sklearn.metrics import accuracy_score y_pred = [0, 2, 1, 3] y_true = [0, 1, 2, 3] accuracy_score(y_true, y_pred) 0.5  accuracy_score(y_true, y_pred, normalize=False) # 若normalize为False,则返回正确分类的样本数 2  2、混淆矩阵 该confusion_matrix函数通过计算混淆矩阵来评估分类准确性，行对应于真正的类，列表示预测值。
+from sklearn.metrics import confusion_matrix y_true = [2, 0, 2, 2, 0, 1] y_pred = [0, 0, 2, 2, 0, 2] confusion_matrix(y_true, y_pred) array([[2, 0, 0], [0, 0, 1], [1, 0, 2]])  3、汉明损失 如果$\hat{y}j$是预测为第$j$类的样本，$y_j$是真值，$n\text{labels}$是类别的数目，则两个样本之间的汉明损失定义为：$$L_{Hamming}(y, \hat{y}) = \frac{1}{n_\text{labels}} \sum_{j=0}^{n_\text{labels} - 1} 1(\hat{y}_j \not= y_j)$$ $1(x)$是指标函数...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-02-25 00:00:00 +0000 UTC'>February 25, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 模型评估" href="http://lich-img.github.io/Mysite/posts/dlml/%E5%88%86%E7%B1%BB%E6%8C%87%E6%A0%87/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>温度预测
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>温度预测 1. 观察耶拿天气数据集的数据 import os fname = &#39;./data/jena_climate_2009_2016.csv&#39; f = open(fname) data = f.read() f.close() lines = data.split(&#39;\n&#39;) header = lines[0].split(&#39;,&#39;) lines = lines[1:] print(header) print(len(lines)) [&#39;&#34;Date Time&#34;&#39;, &#39;&#34;p (mbar)&#34;&#39;, &#39;&#34;T (degC)&#34;&#39;, &#39;&#34;Tpot (K)&#34;&#39;, &#39;&#34;Tdew (degC)&#34;&#39;, &#39;&#34;rh (%)&#34;&#39;, &#39;&#34;VPmax (mbar)&#34;&#39;, &#39;&#34;VPact (mbar)&#34;&#39;, &#39;&#34;VPdef (mbar)&#34;&#39;, &#39;&#34;sh (g/kg)&#34;&#39;, &#39;&#34;H2OC (mmol/mol)&#34;&#39;, &#39;&#34;rho (g/m**3)&#34;&#39;, &#39;&#34;wv (m/s)&#34;&#39;, &#39;&#34;max. wv (m/s)&#34;&#39;, &#39;&#34;wd (deg)&#34;&#39;] 420551  # 解析数据 import numpy as np float_data = np.zeros((len(lines), len(header) - 1)) for i, line in enumerate(lines): values = [float(x) for x in line....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-02-25 00:00:00 +0000 UTC'>February 25, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 温度预测" href="http://lich-img.github.io/Mysite/posts/dlml/%E6%B8%A9%E5%BA%A6%E9%A2%84%E6%B5%8B/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>理解LSTM层与GRU层
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>理解LSTM层与GRU层  SimpleRNN的问题在于，在时刻t，理论上来说，它应该能够记住许多时间部之前见过的各种信息，但实际上它是不可能学到这种长期依赖的。其原因在于“梯度消失”问题，这一效应类似于在层数较多的非循环网络中观察到的效应，随着层数的增加，网络最终变得无法训练。
+ 1. LSTM层 LSTM层是SimpleRNN的一种变体，它增加了一种携带信息跨越多个时间步的方法。假设有一条传送带，其运行方向平行于你所处理的序列。序列中的信息可以在任意位置跳上传送带，然后被传送到更晚的时间步，并在需要时原封不动地跳回来。这实际上就是LSTM的原理：它保存信息以便后面使用，从而防止较早期的信号在处理过程中逐渐消失。
+1.1 Keras 中一个LSTM的例子 # 准备数据 from keras.datasets import imdb from keras.preprocessing import sequence max_features = 10000 maxlen = 500 batch_size = 32 print(&#39;Loading data...&#39;) (input_train, y_train), (input_test, y_test) = imdb.load_data(num_words=max_features) print(len(input_train), &#39;train_sequences&#39;) print(len(input_test), &#39;test sequences&#39;) print(&#39;Pad sequences (samples x time)&#39;) input_train = sequence.pad_sequences(input_train, maxlen=maxlen) input_test = sequence.pad_sequences(input_test, maxlen=maxlen) print(&#39;input_train shape: &#39;, input_train.shape) print(&#39;input_test shape:&#39;, input_test.shape) Loading data... 25000 train_sequences 25000 test sequences Pad sequences (samples x time) input_train shape: (25000, 500) input_test shape: (25000, 500)  # 使用Keras中的LSTM层 from keras....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-02-25 00:00:00 +0000 UTC'>February 25, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 理解LSTM层与GRU层" href="http://lich-img.github.io/Mysite/posts/dlml/lstm/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>理解循环神经网络
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>理解循环神经网络 1. 简单的循环神经网络 RNN以渐进的方式处理信息，同时保存一个关于所处理内容的内部模型，这个模型是根据过去的信息构建的，并随着新信息的进入而不断更新。
+RNN处理序列的方式是：遍历所有序列元素，并保存一个状态（State），其中包含与已查看内容相关的信息。
+RNN的伪代码：
+state_t = 0 for input_t in input_sequence: output_t = f(input_t, state_t) state_t = output_t 可以给出具体的函数f,从输入和状态到输出的变换，其参数包括两个矩阵（W和U）和一个偏置向量。它类似于前馈网络中密集连接层所做的变换。
+state_t = 0 for input_t in input_sequence: output_t = activation(dot(W, input_t) &#43; dot(U, state_t) &#43; b) state_t = output_t # 简单RNN的numpy实现 import numpy as np timesteps = 100 # 输入序列的时间步数 input_features = 32 # 输入特征空间的维度 output_features = 64 # 输出特征空间的维度 inputs = np.random.random((timesteps, input_features)) # 输入数据：随机噪声，仅作为示例 state_t = np.zeros((output_features,)) # 初试状态：全零向量 # 创建随机的权重矩阵 W = np....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-02-25 00:00:00 +0000 UTC'>February 25, 2021</span>&nbsp;·&nbsp;李昌</footer>
+  <a class="entry-link" aria-label="post link to 理解循环神经网络" href="http://lich-img.github.io/Mysite/posts/dlml/%E7%90%86%E8%A7%A3rnn/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://lich-img.github.io/Mysite/categories/dlml/">« Prev Page</a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2021 <a href="http://lich-img.github.io/Mysite/">My New Hugo Site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
